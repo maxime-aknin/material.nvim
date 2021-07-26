@@ -223,7 +223,7 @@ theme.loadTreeSitter = function ()
 		TSAttribute =               { fg = material.yellow }, -- (unstable) TODO: docs
 		TSBoolean=                  { fg = material.orange }, -- For booleans.
 		TSCharacter=                { fg = material.orange }, -- For characters.
-		TSConstructor =             { fg = material.purple }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+		TSConstructor =             { fg = material.cyan }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
 		TSConstant =                { fg = material.yellow }, -- For constants
 		TSConstBuiltin =            { fg = material.red }, -- For constant that are built in the language: `nil` in Lua.
 		TSConstMacro =              { fg = material.red }, -- For constants that are defined by macros: `NULL` in C.
@@ -236,7 +236,7 @@ theme.loadTreeSitter = function ()
 		TSLabel =                   { fg = material.red }, -- For labels: `label:` in C and `:label:` in Lua.
 		TSNamespace =               { fg = material.yellow }, -- For identifiers referring to modules and namespaces.
 		TSNumber =                  { fg = material.orange }, -- For all numbers
-		TSOperator =                { fg = material.cyan }, -- For any operator: `+`, but also `->` and `*` in C.
+		TSOperator =                { fg = material.pink }, -- For any operator: `+`, but also `->` and `*` in C.
 		TSParameter =               { fg = material.paleblue }, -- For parameters of a function.
 		TSParameterReference=       { fg = material.paleblue }, -- For references to parameters of a function.
 		TSProperty =                { fg = material.paleblue }, -- Same as `TSField`,accesing for struct members in C.
@@ -246,7 +246,7 @@ theme.loadTreeSitter = function ()
 		TSStringRegex =             { fg = material.blue }, -- For regexes.
 		TSStringEscape =            { fg = material.disabled }, -- For escape characters within a string.
 		TSSymbol =                  { fg = material.yellow }, -- For identifiers referring to symbols or atoms.
-		TSType =                    { fg = material.purple }, -- For types.
+		TSType =                    { fg = material.cyan }, -- For types.
 		TSTypeBuiltin =             { fg = material.purple }, -- For builtin types.
 		TSTag =                     { fg = material.red }, -- Tags like html tag names.
 		TSTagDelimiter =            { fg = material.cyan }, -- Tag delimiter like `<` `>` `/`
@@ -285,7 +285,7 @@ theme.loadTreeSitter = function ()
 	    treesitter.TSKeywordFunction =         { fg = material.purple, style = 'italic' } -- For keywords used to define a fuction.
 	else
 	    treesitter.TSConditional =             { fg = material.purple } -- For keywords related to conditionnals.
-	    treesitter.TSKeyword =                 { fg = material.cyan } -- For keywords that don't fall in previous categories.
+	    treesitter.TSKeyword =                 { fg = material.purple } -- For keywords that don't fall in previous categories.
 	    treesitter.TSRepeat =                  { fg = material.purple } -- For keywords related to loops.
 	    treesitter.TSKeywordFunction =         { fg = material.purple } -- For keywords used to define a fuction.
 	end
